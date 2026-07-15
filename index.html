@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 
 <html lang="id" prefix="og: https://ogp.me/ns#">
   <head>
@@ -2868,7 +2868,7 @@
                             <p
                               class="elementor-heading-title elementor-size-default"
                             >
-                              
+                              0857-5097-9853
                             </p>
                           </div>
                         </div>
@@ -3835,7 +3835,9 @@
                       if (
                         document.body.contains(document.getElementById("song"))
                       ) {
-                        document.getElementById("song").play();
+                        var song = document.getElementById("song");
+                        song.currentTime = 59;
+                        song.play();
                         isYT = false;
                       } else {
                         isYT = true;

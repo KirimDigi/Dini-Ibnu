@@ -3835,7 +3835,9 @@
                       if (
                         document.body.contains(document.getElementById("song"))
                       ) {
-                        document.getElementById("song").play();
+                        var song = document.getElementById("song");
+                        song.currentTime = 59;
+                        song.play();
                         isYT = false;
                       } else {
                         isYT = true;
